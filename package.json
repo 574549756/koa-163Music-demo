@@ -11,6 +11,7 @@
   "dependencies": {
     "debug": "^2.6.3",
     "ejs": "~2.3.3",
+    "jquery": "^3.3.1",
     "koa": "^2.2.0",
     "koa-bodyparser": "^3.2.0",
     "koa-convert": "^1.2.0",
@@ -19,7 +20,13 @@
     "koa-onerror": "^1.2.1",
     "koa-router": "^7.1.1",
     "koa-static": "^3.0.0",
-    "koa-views": "^5.2.1"
+    "koa-views": "^5.2.1",
+    "leancloud-storage": "^3.7.3",
+    "plupload": "^2.3.2",
+    "qiniu": "^7.2.1",
+    "qiniu-js": "^1.0.22",
+    "vconsole": "^3.2.0",
+    "webpack": "^4.23.1"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"

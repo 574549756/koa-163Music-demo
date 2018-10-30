@@ -1,0 +1,126 @@
+.hotHeader {
+    background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee)
+        no-repeat;
+    background-size: contain;
+    display: block;
+    position: relative;
+    padding-top: 38.9%;
+    overflow: hidden;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hotHeader::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+.hotInner-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.hotInner {
+    padding-left: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.hotTitle {
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880)
+        no-repeat;
+    background-size: 166px 97px;
+    width: 142px;
+    height: 67px;
+    background-position: -24px -30px;
+    z-index: 1;
+}
+#hotTime {
+    margin-top: 10px;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 12px;
+    transform: scale(0.91);
+    transform-origin: left top;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+    z-index: 1;
+}
+section.hotSongs > .list {
+    margin-top: 0;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+section.hotSongs > .list > :first-child > .number,
+section.hotSongs > .list > :nth-child(2) > .number,
+section.hotSongs > .list > :nth-child(3) > .number {
+    color: #df3436;
+}
+section.hotSongs > .list > li > .container {
+    overflow: hidden;
+    padding-left: 10px;
+}
+section.hotSongs > .list > li > div > h3 {
+    font-size: 17px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+section.hotSongs > .list > li > div > p {
+    font-size: 12px;
+    color: #888;
+}
+section.hotSongs > .list > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-right: 30px;
+}
+section.hotSongs > .list > li > .number {
+    font-size: 17px;
+}
+section.hotSongs > .list .playButton {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.hotSongs > .list .icon-play {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    fill: #aaa;
+}
+section.hotSongs > .list .icon-sq {
+    fill: #fe672e;
+}

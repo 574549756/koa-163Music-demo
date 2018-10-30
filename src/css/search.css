@@ -1,0 +1,104 @@
+.m-input {
+    padding: 15px 10px;
+}
+.inputCover {
+    padding: 0px 30px;
+    width: 100%;
+    height: 30px;
+    background: #ebecec;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.inputCover > :first-child {
+    height: 14px;
+    width: 14px;
+    fill: #bcbdbd;
+    position: absolute;
+    left: 7px;
+}
+.inputCover > :last-child {
+    height: 14px;
+    width: 14px;
+    fill: #bcbdbd;
+    position: absolute;
+    right: 7px;
+    display: none;
+}
+.inputCover > #search {
+    width: 100%;
+    height: 30px;
+    font: 14px/1.5 Helvetica, sans-serif;
+    background: #ebecec;
+
+    border: none;
+    outline: none;
+}
+#cross {
+    display: none;
+}
+#cross.active {
+    display: block;
+}
+#searchResult > li {
+    margin: 0 10px 0 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#searchResult > li > svg {
+    width: 15px;
+    fill: #b1b2b2;
+}
+#searchResult > li > a {
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    line-height: 45px;
+}
+#searchResult > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.search-area {
+    width: 509px;
+    background: white;
+    height: 250px;
+    border: 1px solid #ddd;
+    list-style: none;
+}
+.search-area > #searchResult {
+    overflow: scroll;
+    height: 190px;
+}
+.search-area > #searchResult::-webkit-scrollbar {
+    display: none;
+}
+.search-area > #searchResult > li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search-area > #searchResult > li > svg {
+    height: 15px;
+    width: 15px;
+}
+.search-area > #searchResult > li > p {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    line-height: 40px;
+    display: block;
+    width: 290px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+.addSong2list {
+    cursor: pointer;
+}
