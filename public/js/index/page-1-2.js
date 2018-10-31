@@ -2,7 +2,7 @@
     let view = {
         el: 'section.songs',
         template: `        
-        <li>
+        <li onclick="window.location.href='./song.html?id={{song.id}}'">
           <h3>{{song.name}}</h3>
           <p>
             <svg class="icon icon-sq">
