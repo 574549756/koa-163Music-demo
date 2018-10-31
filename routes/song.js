@@ -2,6 +2,7 @@ const router = require('koa-router')()
 router.prefix('/song')
 
 router.get('/', async (ctx, next) => {
+  await ctx.response.type = 'html';
 })
 
 router.get('/string', async (ctx, next) => {
