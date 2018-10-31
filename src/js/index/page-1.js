@@ -1,4 +1,4 @@
-{
+export default function(){
     let view = {
         el: '.page-1',
         init() {

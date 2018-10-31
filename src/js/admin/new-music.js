@@ -1,4 +1,4 @@
-{
+export default function(){
     let view = {
         el: '.newMusic',
         template: `New`,

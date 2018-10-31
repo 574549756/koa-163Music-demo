@@ -1,19 +1,11 @@
-const router = require('koa-router')()
+const router = require('koa-router')()/* 
 
 router.get('/', async (ctx, next) => {
-  await ctx.render('index', {
-    title: '我的云音乐'
-  })
-})
-
-router.get('/string', async (ctx, next) => {
-  ctx.body = 'koa2 string'
-})
-
-router.get('/json', async (ctx, next) => {
-  ctx.body = {
-    title: 'koa2 json'
-  }
+  await ctx.render('index', {})
+}) */
+router.get('/song')
+router.get('/playlist/:id', async (ctx, next) => {
+  await next.render('playlist',{})
 })
 
 module.exports = router

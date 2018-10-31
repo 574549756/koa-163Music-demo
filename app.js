@@ -1,11 +1,13 @@
 const Koa = require('koa')
 const app = new Koa()
+const serve = require('koa-static')
+const Router = require('koa-router')
 const views = require('koa-views')
 const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
-
+阮一峰
 const index = require('./routes/index')
 const users = require('./routes/users')
 
@@ -33,8 +35,11 @@ app.use(async (ctx, next) => {
 })
 
 // routes
+
+
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
+
 
 // error-handling
 app.on('error', (err, ctx) => {
